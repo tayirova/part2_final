@@ -1,0 +1,7 @@
+RUN {
+    ALLOCATE CHANNEL ch1 DEVICE TYPE DISK;
+    BACKUP DATABASE FORMAT '/u01/app/oracle/backup/ORCL19C_%U.bak';
+    RELEASE CHANNEL ch1;
+}
+
+
